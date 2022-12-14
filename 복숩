@@ -1,0 +1,50 @@
+# def bin(n):
+#     answer = ''
+#     while n != 0:
+#         answer += str(n % 2)
+#         n //= 2 #n은 n을 2로 나누었을때의 몫이다.
+#     print(answer[::-1])
+# bin(10)
+
+
+#이진 변환 반복하기
+# def recur(s,call,zero):
+#     call += 1
+#     zero += s.count('0')
+#     s = s.replace('0','')
+#     s = bin(len(s))[2::]
+#     if s == '1':
+#         return [call,zero]
+#     else:
+#         return recur(s,call,zero)
+# def solution(s):
+#     return recur(s,0,0)
+# s = "110010101001"
+# print(solution(s))
+
+
+#3진법 뒤집기
+# def solution(n):
+#     answer = ''
+#     while n != 0:
+#         answer += str(n % 3)
+#         n //= 3 #n은 n을 2로 나누었을때의 몫이다.
+#     answer = answer[::-1]
+#     result = 0
+#     for i in range(len(answer)):
+#         result += int(answer[i]) * (3 ** i)
+#         print(result)
+#
+#     print(result)
+# solution(45)
+
+
+#비밀지도 17681
+def solution(n, arr1, arr2):
+    answer = []
+    for i in range(len(arr1)):
+        print(bin(arr1))
+
+    return answer
+arr1 = [9, 20, 28, 18, 11]
+arr2 = [30, 1, 21, 17, 28]
